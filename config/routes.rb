@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   get 'user/new'
 
   get 'home'    => 'static_pages#home'
