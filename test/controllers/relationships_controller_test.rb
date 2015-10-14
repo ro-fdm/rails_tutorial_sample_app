@@ -9,7 +9,7 @@ class RelationshipsControllerTest < ActionController::TestCase
     assert_redirected_to login_url
   end
 
-  test "create should require logged-in user" do
+  test "delete should require logged-in user" do
     assert_no_difference 'Relationship.count' do
       delete :destroy, id: relationships(:one)
     end
